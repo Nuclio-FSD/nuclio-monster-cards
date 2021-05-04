@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Hand from "./components/hand/hand";
+import Logo from "./components/logo/logo";
 
 function App() {
+  const handOfMonsters = [
+    { name: "Pipo", color: "#F2DFDF" },
+    { name: "Chuky", color: " #6BBABB3B" },
+    { name: "Polo", color: "#F2AADF" },
+  ];
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Logo />
+      <Hand monsters={handOfMonsters} />
     </div>
   );
 }
