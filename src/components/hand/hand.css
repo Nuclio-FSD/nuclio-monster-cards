@@ -1,0 +1,8 @@
+.hand_container {
+    display: flex;
+    margin: 80px;
+}
+
+.hand_container > div {
+    margin: 10px;
+}
